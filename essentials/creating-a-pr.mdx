@@ -1,0 +1,43 @@
+## How to Create a Pull Request (PR) for Open-Source Projects
+
+1. **Fork the Repository**  
+   Click the “Fork” button on the project’s GitHub page to create your own copy under your GitHub account.
+
+2. **Clone Your Fork Locally**  
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/PROJECT_NAME.git
+   cd PROJECT_NAME
+   ```
+
+3. **Add the Original Repo as Upstream**  
+   ```bash
+   git remote add upstream https://github.com/ORIGINAL_OWNER/PROJECT_NAME.git
+   ```
+
+4. **Create a New Branch for Your Changes**  
+   ```bash
+   git checkout -b feature/your-descriptive-branch-name
+   ```
+
+5. **Make Your Changes**  
+   Edit code, add tests, update docs—whatever the issue or feature requires.
+
+6. **Commit with a Clear Message**  
+   ```bash
+   git add .
+   git commit -m "feat: add user authentication via OAuth2"
+   ```
+
+7. **Push to Your Fork**  
+   ```bash
+   git push origin feature/your-descriptive-branch-name
+   ```
+
+8. **Open the Pull Request**  
+   - Go to your fork on GitHub.  
+   - Click “Compare & pull request”.  
+   - Fill in the template: describe what you changed and why, reference any open issues (e.g., “Closes #123”).  
+   - Ensure CI checks pass; address review feedback promptly.
+
+9. **Celebrate & Iterate**  
+    Once maintainers merge your PR, your contribution becomes part of the project—congrats!

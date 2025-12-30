@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "maple",
+  "name": "DesignByExamples",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#115bef",
+    "light": "#2391FF",
+    "dark": "#7200CA"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -17,52 +17,23 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "how-to-use",
+              "Design concepts"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Layout & Structure",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "layout/auto-layout",
+              "layout/grids",
+              "layout/constraints",
+              "layout/alignment"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Open Source",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "essentials/creating-a-pr"
             ]
           }
         ]
@@ -71,24 +42,41 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Website",
+          "href": "https://iamsamuel.framer.website",
+          "icon": "globe"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "X (Twitter)",
+          "href": "https://x.com/tomiwaakinbode1",
+          "icon": "X"
+        },
+        {
+          "anchor": "Discord",
+          "href": "https://discord.com/tomiwaakinbode1",
+          "icon": "discord"
+        },
+        {
+          "anchor": "Telegram",
+          "href": "https://t.me/tomiwaakinbode1",
+          "icon": "telegram"
         }
       ]
     }
   },
+  "background": {
+    "decoration": "grid"
+  },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light-v2.svg",
+    "dark": "/logo/dark-v2.svg"
   },
   "navbar": {
     "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/goodylili/defibyexample"
+      },
       {
         "label": "Support",
         "href": "mailto:hi@mintlify.com"
@@ -102,21 +90,21 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/tomiwaakinbode1?s=21&t=Ao6XMtDMivk31gxweHcEsg",
+      "github": "https://github.com/tomiwa1",
+      "linkedin": "https://www.linkedin.com/in/tomiwaakinbode?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     }
   }
 }
