@@ -17,8 +17,7 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "how-to-use",
-              "Design concepts"
+              "how-to-use"
             ]
           },
           {
@@ -75,7 +74,7 @@
     "links": [
       {
         "label": "GitHub",
-        "href": "https://github.com/goodylili/defibyexample"
+        "href": "https://github.com/Tomiwa1/DesignbyExamples"
       },
       {
         "label": "Support",
