@@ -1,0 +1,70 @@
+A type-scale is a sequence of font sizes derived from a base size and a ratio. Each step in the scale increases or decreases proportionally rather than arbitrarily. Type scales define how text sizes relate to each other across an interface, thereby remove guesswork by replacing isolated font sizes with a predictable progression.
+
+Instead of choosing sizes like `14px`, `17px`, `22px`, and `29px` at random, a type scale produces values that relate mathematically and visually.
+
+This creates:
+- Consistent hierarchy
+- Predictable spacing relationships
+- Easier maintenance across screens
+
+---
+
+#### Modular Scales
+
+Most typography systems use **modular scales**.
+
+A modular scale starts with a base size (commonly body text) and multiplies it by a ratio to generate larger and smaller text sizes.
+
+Common ratios include:
+
+- **1.125** — Subtle, content-heavy interfaces  
+- **1.2** — Balanced and widely used  
+- **1.333** — Strong hierarchy, editorial layouts  
+
+Larger ratios create more dramatic hierarchy. Smaller ratios produce tighter, more restrained systems.
+
+There is no “correct” ratio — only ratios that align with the product’s tone and content density.
+
+---
+
+#### Fixed vs Fluid Type Scales
+
+Type scales can be **fixed** or **fluid**.
+
+- **Fixed scales**  
+  Use the same font sizes across breakpoints. Simple to implement, but less adaptable.
+
+- **Fluid scales**  
+  Adjust font sizes dynamically based on viewport width. More complex, but better for responsive layouts.
+
+Fluid scales often rely on interpolation (e.g. CSS `clamp()`), allowing typography to grow smoothly rather than jump between breakpoints.
+
+---
+
+#### Desktop vs Mobile Scaling Logic
+
+Typography should not scale uniformly across devices.
+
+Common principles:
+- Body text often stays relatively stable for readability  
+- Headings usually compress more aggressively on smaller screens  
+- Large display sizes may disappear entirely on mobile  
+
+Mobile typography prioritizes legibility and scanning, while desktop typography can afford more expressive hierarchy.
+
+Designing separate scales for mobile and desktop often produces better results than forcing one scale to work everywhere.
+
+---
+
+#### When to Break the Scale
+
+Type scales are rules — not laws.
+
+Breaking the scale is justified when:
+- A specific UI element needs emphasis (e.g. hero numbers, stats)
+- Accessibility requires larger text sizes
+- Product constraints override typographic purity
+
+However, breaking the scale should be intentional and rare. If the scale is broken often, the system is probably poorly defined.
+
+A good typography system makes most decisions easy — and the exceptions obvious.

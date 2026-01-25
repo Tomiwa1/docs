@@ -16,7 +16,8 @@
           {
             "group": "Getting started",
             "pages": [
-              "Introduction"
+              "getting-started/Introduction",
+              "getting-started/creating-a-pr"
             ]
           },
           {
@@ -29,9 +30,12 @@
             ]
           },
           {
-            "group": "Open Source",
+            "group": "UI Components",
             "pages": [
-              "essentials/creating-a-pr"
+              "Typography/Typography Systems",
+              "Typography/Hierachy & Information Priority",
+              "Typography/Tyepscales",
+              "Typography/Line Height"
             ]
           }
         ]

@@ -1,0 +1,73 @@
+Font size alone does not determine readability.
+
+How text *breathes* vertically and horizontally, has as much impact on comprehension as the typeface itself. 
+
+Line height, paragraph width, and vertical rhythm determine:
+- how easily text can be scanned
+- how long users can read without fatigue
+- whether text-heavy interfaces feel structured or cluttered
+
+These properties are often adjusted visually without a clear rationale, which leads to inconsistent results across screens and layouts. This section explains how they work, how they relate to each other, and how to apply them deliberately.
+
+#### Line Height
+
+Line height defines the vertical distance between consecutive lines of text.
+
+Its purpose is to:
+- prevent visual overlap between lines
+- make it easier for the eye to move from the end of one line to the beginning of the next
+- maintain readability as text size and line length change
+
+Line height shouldn't just be a fixed number. The right balance depends on your font choice, text size, and where the text is being read.
+
+## Why One Line-Height Ratio Does Not Work Everywhere
+
+Line height cannot be chosen in isolation. It depends on:
+
+- the font’s x-height and proportions  
+- how long each line of text is  
+- how much text appears in a single block  
+
+For example:
+
+- Fonts with large x-heights often need less line height.  
+- Narrow text columns can tolerate tighter spacing.  
+- Wide paragraphs require more vertical space so the eye can find the next line.  
+
+Using the same line-height ratio everywhere usually produces text that feels cramped in some contexts and overly loose in others.
+
+---
+
+## Paragraph Width (Measure)
+
+Paragraph width, also called **measure**, describes how long each line of text is.
+
+Rather than pixels, measure is best understood in **characters per line**.
+
+A commonly effective range for body text is:
+
+- **45–75 characters per line**
+
+Examples:
+
+- A sidebar or card may contain ~40–50 characters per line.  
+- A full-width desktop layout may exceed 100 characters per line if unconstrained.  
+
+Even if font size and line height remain unchanged, very long lines are harder to read.  
+This is why long-form text is usually placed inside containers with a `max-width`.
+
+---
+
+<!--
+## Line Length and Line Height Work Together
+
+Line length and line height must be adjusted together.
+
+- **Short lines** (cards, narrow columns)  
+  → slightly tighter line height often works well.
+
+- **Long lines** (wide layouts, documentation pages)  
+  → line height usually needs to increase to maintain readability.
+
+Using tight line height with long lines is a common cause of dense, tiring text.
+-->
