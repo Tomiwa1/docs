@@ -1,43 +1,44 @@
-# Mintlify Starter Kit
+# Design By Examples
 
-Use the starter kit to get your docs deployed and ready to customize.
+Welcome to **Design By Examples**, a comprehensive documentation hub dedicated to modern design systems, UI patterns, and development workflows. This repository serves as a living guide for designers and developers looking to build consistent, accessible, and beautiful interfaces.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+This project is built on a simple idea:
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+> Design tools change.
+> Design concepts don’t.
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+## 📚 What's Inside
 
-## Development
+This documentation covers a wide range of topics essential for digital product design:
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+- **Foundations**: Core principles including [Color Systems](foundations/Color%20System.mdx), [Spacing](foundations/Spacing%20Systems.mdx), and [Typography](foundations/Typography.mdx).
+- **Typography**: Deep dives into [Type Scales](Typography/Tyepscales.mdx), [Line Height](Typography/Line%20Height.mdx), and [Hierarchy](Typography/Hierachy%20&%20Information%20Priority.mdx).
+- **Layout**: Understanding [Auto Layout](layout/auto-layout.mdx), [Grids](layout/grids.mdx), and [Constraints](layout/constraints.mdx).
+- **UI Components**: Practical guides for building [Cards](UI-Components/cards.mdx), [Nav Bars](UI-Components/nav-bars.mdx), [Tables](UI-Components/tables.mdx), and more.
+- **AI Tools**: Leveraging modern tools like [Cursor](ai-tools/cursor.mdx) and [Claude Code](ai-tools/claude-code.mdx) for design engineering.
 
-```
-npm i -g mint
-```
+## 🚀 Running Locally
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+This documentation is built with [Mintlify](https://mintlify.com/). To run it locally:
 
-```
-mint dev
-```
+1.  **Install Mintlify CLI**:
+    ```bash
+    npm i -g mint
+    ```
 
-View your local preview at `http://localhost:3000`.
+2.  **Start the Development Server**:
+    Navigate to the project root and run:
+    ```bash
+    mint dev
+    ```
 
-## Publishing changes
+3.  **Preview**:
+    Open `http://localhost:3000` in your browser.
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+## 🤝 Contributing
 
-## Need help?
+We welcome contributions! Whether it's fixing a typo, adding a new component example, or improving existing guides.
 
-### Troubleshooting
+Please check out our [Creating a Pull Request](getting-started/creating-a-pr.mdx) guide to get started.
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+## 📄 License
