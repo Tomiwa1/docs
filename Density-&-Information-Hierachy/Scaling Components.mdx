@@ -1,0 +1,71 @@
+
+
+Components are rarely used in a single context. The same component may appear in dense tables, spacious dashboards, modal dialogs, or mobile views. Scaling a component across these contexts requires deliberate control of density, not redesign.
+
+A component should retain its identity while adapting its spatial and visual weight to its environment. This allows users to recognize functionality consistently, even as layout constraints change.
+
+---
+
+### Context Determines Density
+
+The appropriate density of a component is determined by its surrounding layout and the user’s task, not by the component itself.
+
+For example:
+- In information-dense views, components must compress without losing clarity
+- In focus-driven views, the same components may expand to support attention and interaction
+
+This adaptability should be planned, not improvised.
+
+---
+
+### Variable Density States
+
+Well-designed components support multiple density states rather than a single fixed configuration.
+
+Common variations include:
+- Compact: reduced padding and simplified content for high-density layouts
+- Default: balanced spacing for general use
+- Spacious: increased padding and emphasis for focused interactions
+
+These variations should be systematic, using predictable adjustments to padding, spacing, and internal hierarchy rather than ad hoc overrides.
+
+---
+
+### Preserving Hierarchy Across Scales
+
+As components scale, hierarchy must remain intact.
+
+Scaling should not flatten importance or introduce unintended emphasis. Primary actions should remain primary, and secondary information should not gain weight simply because space is available.
+
+This requires:
+- Proportional scaling of padding and spacing
+- Consistent typographic hierarchy
+- Controlled use of contrast across contexts
+
+The goal is visual continuity, not visual sameness.
+
+---
+
+### Component Systems, Not Instances
+
+Designing components for scale means thinking in terms of systems rather than isolated instances.
+
+Components should expose:
+- Clear rules for padding and spacing
+- Defined density variants
+- Constraints on how content expands or contracts
+
+This enables components to be reused confidently across products, screens, and devices without constant redesign or manual adjustment.
+
+---
+
+### Design Implications
+
+Scaling components effectively reduces design debt.
+
+When density, hierarchy, and scaling behavior are defined at the component level:
+- Screens compose faster
+- Inconsistencies decrease
+- Design decisions become predictable
+
+Components that scale well allow the system to grow without sacrificing clarity or usability.
