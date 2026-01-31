@@ -1,0 +1,152 @@
+## Optical vs Mathematical Sizing
+
+Typography often looks *wrong* even when the numbers are correct.
+
+Two text elements can share the same font family, weight, and pixel size — yet one appears larger, heavier, or more dominant than the other. This isn’t a bug in your design system. It’s a consequence of **optical perception**.
+
+To understand why, we need to separate two ideas:
+
+- **Mathematical sizing** — what the numbers say  
+- **Optical sizing** — what the eye perceives  
+
+### Mathematical Sizing
+
+Mathematical sizing treats typography as a system of exact values.
+
+If two text elements are both set to:
+
+- Font size: `16px`
+- Font weight: `400`
+- Line height: `1.5`
+
+They are considered equal.
+
+Design tools, CSS, and design systems rely on this assumption. It is necessary for consistency, predictability, and implementation.
+
+But mathematical consistency does **not** guarantee visual consistency.
+
+### Optical Sizing
+
+Optical sizing acknowledges that humans do not perceive text numerically.
+
+The eye responds to:
+- Stroke thickness
+- Letter width
+- x-height
+- Counter shapes
+- Vertical proportions
+
+Because of this, two fonts set to the same pixel size can appear visually different, even when they are technically identical in value.
+
+For example:
+- A font with a **large x-height** appears bigger at the same size
+- A condensed font appears smaller than a wide one
+- A heavy stroke weight makes text feel larger and denser
+- Round shapes often appear larger than square ones
+
+The numbers stay the same. The perception does not.
+
+### Why Equal Sizes Look Unequal
+
+Consider this common scenario:
+
+You place a heading and a button label side by side.
+
+Both are set to:
+- `16px`
+- Same font family
+- Same weight
+
+Yet the button label feels heavier or more dominant.
+
+This usually happens because:
+- The button text is uppercase
+- Uppercase letters have uniform height and thicker visual mass
+- The surrounding padding amplifies its presence
+
+Numerically, nothing is wrong. Optically, the balance is off.
+
+### Font Size Is Not Visual Size
+
+Font size defines the height of the font’s **em box**, not the visible height of letters.
+
+Within that box:
+- Ascenders, descenders, and x-height vary by typeface
+- Different fonts occupy different proportions of the same box
+- The visible glyphs rarely fill the full height
+
+This is why:
+- Two `16px` fonts can feel like `15px` and `17px`
+- Switching fonts without adjusting sizes often breaks hierarchy
+- “Same size” does not mean “same presence”
+
+### Optical Adjustments in Practice
+
+Good typography often involves breaking mathematical consistency slightly to achieve visual consistency.
+
+Common optical adjustments include:
+- Reducing uppercase text size by 1–2px
+- Slightly increasing line height for dense fonts
+- Decreasing font weight for large headings
+- Adjusting letter spacing based on size, not rules
+
+These changes are intentional. They are not hacks.
+
+They compensate for how the eye interprets form.
+
+## Optical Sizing Exercise
+This exercise demonstrates why text with the same numeric size can appear visually unequal, and how optical sizing corrects that imbalance.
+
+You do not need plugins or special tools.  
+Only your eyes.
+<img
+src="/images/optical sizing.png"
+style={{ height: "auto", width: "auto" }}
+className="rounded-lg"
+/>
+<Steps>
+  <Step title="Establish a Baseline">
+   Create a text layer and type "bubble', duplicate the text layer and change the text to 'minimum'
+  </Step>
+  <Step title="Set the following properties:">
+    - Font size: `16px`
+    - Font weight: `400 (Regular)`
+    - Line height: `Auto`
+    - Letter spacing: `0`
+  </Step>
+  <Step title="Zoom the canvas to 100%">
+    Although both words use identical values, they do not feel equally weighted. 
+    `bubble` appears heavier due to its round shapes and thicker visual mass.  
+    `minimum` appears lighter because it is composed of narrow vertical strokes and more negative space.
+  </Step>
+   <Step title="Apply Optical Sizing">
+    Adjust the text to correct perception rather than numbers:
+
+    - Reduce `bubble` from `16px` to `15px`
+    - Increase `minimum` from `16px` to `17px`
+
+The words now feel closer in visual weight even though their font sizes are no longer equal.
+
+  </Step>
+</Steps>
+This is optical sizing in practice.
+
+---
+### Design Systems vs Visual Reality
+
+Design systems prefer numbers because numbers scale.
+
+But typography lives in perception.
+
+This is why many mature systems:
+- Define **optical size ranges** instead of fixed values
+- Adjust type tokens per font family
+- Treat labels, headings, and body text differently even at the same size
+
+Consistency in typography is not about sameness.
+
+It is about **visual balance across contexts**.
+
+### Key Takeaway
+
+While mathematical sizing provides order, optical sizing ensures clarity. Typography succeeds when it looks right, regardless of whether the numbers align.

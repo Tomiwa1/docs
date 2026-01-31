@@ -2,12 +2,7 @@
 
 Welcome to **Design By Examples**, a comprehensive documentation hub dedicated to modern design systems, UI patterns, and development workflows. This repository serves as a living guide for designers and developers looking to build consistent, accessible, and beautiful interfaces.
 
-This project is built on a simple idea:
-
-> Design tools change.
-> Design concepts don’t.
-
-## 📚 What's Inside
+Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
 
 This documentation covers a wide range of topics essential for digital product design:
 
@@ -21,16 +16,15 @@ This documentation covers a wide range of topics essential for digital product d
 
 This documentation is built with [Mintlify](https://mintlify.com/). To run it locally:
 
-1.  **Install Mintlify CLI**:
-    ```bash
-    npm i -g mint
-    ```
+```
+npm i -g mint
+```
 
-2.  **Start the Development Server**:
-    Navigate to the project root and run:
-    ```bash
-    mint dev
-    ```
+Run the following command at the root of your documentation, where your `docs.json` is located:
+
+```
+mint dev
+```
 
 3.  **Preview**:
     Open `http://localhost:3000` in your browser.
@@ -41,4 +35,6 @@ We welcome contributions! Whether it's fixing a typo, adding a new component exa
 
 Please check out our [Creating a Pull Request](getting-started/creating-a-pr.mdx) guide to get started.
 
-## 📄 License
+### Resources
+
+- [Mintlify documentation](https://mintlify.com/docs)
