@@ -20,15 +20,7 @@
               "getting-started/creating-a-pr"
             ]
           },
-          {
-            "group": "Layout & Structure",
-            "pages": [
-              "layout/auto-layout",
-              "layout/grids",
-              "layout/constraints",
-              "layout/alignment"
-            ]
-          },
+
           {
             "group": "Typography",
             "pages": [
@@ -48,6 +40,15 @@
               "Density-&-Information-Hierachy/Component Competition",
               "Density-&-Information-Hierachy/Padding & Visual Weight",
               "Density-&-Information-Hierachy/Scaling Components"
+            ]
+          },
+          {
+            "group": "Layout & Structure",
+            "pages": [
+              "layout/auto-layout",
+              "layout/grids",
+              "layout/constraints",
+              "layout/alignment"
             ]
           }
         ]
